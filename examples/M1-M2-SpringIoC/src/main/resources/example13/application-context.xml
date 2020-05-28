@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userDirectory" class="com.luxoft.springioc.example13.LDAPUserDirectory"/>
+
+    <bean id="loginManager" class="com.luxoft.springioc.example13.LoginManager">
+        <property name="userDirectory" ref="userDirectory"/>
+    </bean>
+    <bean id="userDirectorySearch" class="com.luxoft.springioc.example13.UserDirectorySearch">
+        <property name="userDirectory" ref="userDirectory"/>
+    </bean>
+    <bean id="userInfo" class="com.luxoft.springioc.example13.UserInfo">
+        <property name="ldapUserDirectory" ref="userDirectory"/>
+    </bean>
+
+</beans>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+				http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+   <aop:aspectj-autoproxy/>
+   
+   <bean id="zeroPoint" class ="com.luxoft.springaop.example4.Point">
+      <property name="name" value="origin"/>
+      <property name="x" value="0" />
+      <property name="y" value="0" />
+  </bean>
+
+  <bean id="point2" class ="com.luxoft.springaop.example4.Point">
+      <property name="name" value="point2"/>
+      <property name="x" value="20" />
+      <property name="y" value="0" />
+  </bean>
+  
+  <bean id="point3" class ="com.luxoft.springaop.example4.Point">
+      <property name="name" value="point3"/>
+      <property name="x" value="0" />
+      <property name="y" value="20" />
+  </bean>
+  
+  <bean id="triangle" class= "com.luxoft.springaop.example4.Triangle">
+       <property name="name" value="myTriangle"/>
+       <property name="color" value="red"/>
+       <property name="points">
+          <list>
+              <ref bean="zeroPoint"/>
+              <ref bean="point2"/>
+              <ref bean="point3"/>
+          </list>
+       </property>
+  </bean>
+  
+  <bean id="circle" class= "com.luxoft.springaop.example4.Circle">
+       <property name="center" ref="zeroPoint"/>
+       <property name="radius" value="1.0"/>
+  </bean>
+
+  <bean name="loggingAspect1" class = "com.luxoft.springaop.example4.LoggingAspect1"/>
+  <bean name="loggingAspect2" class = "com.luxoft.springaop.example4.LoggingAspect2"/>
+</beans>

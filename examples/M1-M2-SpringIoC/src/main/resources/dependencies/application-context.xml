@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+
+   <bean id="smith" class="com.luxoft.springioc.dependencies.Person">
+		<property name="name" value="John Smith"/>
+		<property name="company" ref="gl"/>
+	</bean>
+
+	<bean id="luxoftCompany" class="com.luxoft.springioc.dependencies.Company">
+		<property name="name" value="Luxoft !!!"/>
+	</bean>
+
+	<bean id="gl" class="com.luxoft.springioc.dependencies.Company">
+		<property name="name" value="GL"/>
+	</bean>
+
+
+	<bean id="companyReport" class="com.luxoft.springioc.dependencies.CompanyReport">
+		<property name="company" ref="luxoftCompany"/>
+	</bean>
+
+	<bean id="bankApplication" class="com.luxoft.springioc.dependencies.BankApplication">
+		<property name="companyReport" ref="companyReport"/>
+	</bean>
+
+</beans>

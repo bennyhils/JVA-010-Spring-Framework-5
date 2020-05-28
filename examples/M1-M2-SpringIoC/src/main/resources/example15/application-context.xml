@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+   
+   <bean id="personBean" class="com.luxoft.springioc.example15.Person"/>
+
+   <bean id="customerBean" class="com.luxoft.springioc.example15.Customer">
+ 
+		<!-- java.util.List -->
+		<property name="list">
+			<list>
+				<value>1</value>
+				<ref bean="personBean" />
+				<bean class="com.luxoft.springioc.example15.Person">
+					<property name="name" value="John" />
+					<property name="address" value="address" />
+					<property name="age" value="28" />
+				</bean>
+			</list>
+		</property>
+		
+		<!-- java.util.Set -->
+		<property name="set">
+			<set>
+				<value>1</value>
+				<ref bean="personBean" />
+				<bean class="com.luxoft.springioc.example15.Person">
+					<property name="name" value="John" />
+					<property name="address" value="address" />
+					<property name="age" value="28" />
+				</bean>
+			</set>
+		</property>
+		
+		<!-- java.util.Map -->
+		<property name="map">
+			<map>
+				<entry key="Key 1" value="1" />
+				<entry key="Key 2" value-ref="personBean"/>
+				<entry key="Key 3">
+					<bean class="com.luxoft.springioc.example15.Person">
+						<property name="name" value="John" />
+						<property name="address" value="address" />
+						<property name="age" value="28" />
+					</bean>
+				</entry>
+			</map>
+		</property>
+		
+		<!-- java.util.Map -->
+		<property name="stringsMap">
+			<map>
+				<entry key="String key 1" value="1" />
+				<entry key="String key 2" value-ref="personBean"/>
+			</map>
+		</property>
+			
+		<!-- java.util.Map -->
+		<property name="personsMap">
+			<map>
+				<entry key-ref="personBean" value="USA" />
+			</map>
+		</property>
+		
+		
+		<!-- java.util.Properties -->
+		<property name="props">
+			<props>
+				<prop key="admin">admin@example.com</prop>
+				<prop key="support">support@example.com</prop>
+			</props>
+		</property>
+		
+   </bean>
+</beans>

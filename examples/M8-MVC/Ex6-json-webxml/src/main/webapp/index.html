@@ -1,0 +1,116 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sitnikova, Ekaterina</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">5911900.00000000</mso:Order>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Sitnikova, Ekaterina</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x0101000E112BECF43BD84C899862275C8B401C</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body style="padding: 100px 100px 100px 100px;">
+
+    <h1>Registration to Secret Agency</h1>
+
+    <div id="registration" style="padding-top: 100px;">
+        <div style="background-color: lightcoral; padding: 20px 20px 20px 20px; display: none; margin-bottom: 100px;" id="msg">
+            Name already exists. Choose another one
+        </div>
+
+        <form onsubmit="return false">
+            <div class="form-row align-items-left">
+                <div class="col-3">
+                    <input type="text" class="form-control" onkeyup="check()" id="name" name="name" value="" placeholder="Enter your name..." />
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary" disabled id="register" >Register</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <div id="congrats" style="display: none; padding-top: 100px;">
+        <h1>Congratulations!!! Now you are one of us!!!</h1>
+        <div id="names"  >
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        function check()
+        {
+            var name = $('input#name')[0].value;
+            if (name.length > 2)
+            {
+                $.ajax({
+                    method:"GET",
+                    url:"/names/check?name=" + name
+                })
+                    .done(function (resp)
+                    {
+                        if (resp === false)
+                        {
+                            $('div#msg')[0].style.display = 'none';
+
+                            $('button#register')[0].onclick = register;
+
+                            $('button#register')[0].disabled = false;
+                        }
+                        else
+                        {
+                            $('div#msg')[0].style.display = 'block';
+                        }
+                    })
+            }
+            else
+            {
+                $('button#register')[0].disabled = true;
+            }
+        }
+
+        function register()
+        {
+            if ($('input#name')[0].value.length < 3)
+            {
+                return;
+            }
+
+            $.ajax({
+                method:"POST",
+                url:"/names",
+                data: { name: $('input#name')[0].value }
+            })
+                .done(function ()
+                {
+                    $.ajax({
+                        method:"GET",
+                        url:"/names"
+                    })
+                        .done(function (names)
+                        {
+                            var content = '';
+
+                            for (var n of names)
+                            {
+                                content += '<div class="card"><div class="card-body">' + n + '</div></div><br>';
+                            }
+
+                            $('div#names')[0].innerHTML = content;
+                            $('div#registration')[0].style.display = 'none';
+                            $('div#congrats')[0].style.display = 'block';
+                        })
+                });
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd" >
+
+    <bean id="bean1" class="com.luxoft.springioc.example06.Bean1"/>
+    <bean id="bean2" class="com.luxoft.springioc.example06.Bean2" lazy-init="false"/>
+    <bean id="bean3" class="com.luxoft.springioc.example06.Bean3" lazy-init="default"/>
+    <bean id="bean4" class="com.luxoft.springioc.example06.Bean4" lazy-init="true"/>
+</beans>
