@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.2.xsd"
+    default-init-method="init"
+    default-destroy-method="cleanup">
+
+   <bean id="bean1" class="com.luxoft.springioc.example27.Bean1"
+         init-method="init" />
+
+   <bean id="bean2" class="com.luxoft.springioc.example27.Bean2"
+   init-method="isajkdhaskjhdkjsahdkjnit"/>
+</beans>

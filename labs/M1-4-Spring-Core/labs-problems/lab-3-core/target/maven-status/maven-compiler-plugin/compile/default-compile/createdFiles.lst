@@ -1,0 +1,6 @@
+com/luxoft/springioc/lab3/model/RegistrationManager.class
+com/luxoft/springioc/lab3/model/UsualPerson.class
+com/luxoft/springioc/lab3/model/Person.class
+com/luxoft/springioc/lab3/model/PersonRegistrationEvent.class
+com/luxoft/springioc/lab3/model/Country.class
+com/luxoft/springioc/lab3/model/PersonRegistrationListener.class

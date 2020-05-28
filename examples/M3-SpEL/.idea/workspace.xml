@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="33bc5ba6-071a-4242-b792-a01c6944f2fc" name="Default" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="SpringExpressionLanguage" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="210" />
+    <option name="y" value="27" />
+    <option name="width" value="1680" />
+    <option name="height" value="947" />
+  </component>
+  <component name="ProjectId" id="1aTUgyZsumg49XNj6ehpyejCqkF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="eu.ydp.idea.ts.spec.generator.settings.spec.template" value="import {$ClassName$} from '$TestsRelativePath$../src/$classRelativePath$/$ClassName$';&#10;&#10;describe('$ClassName$', () =&gt; {&#10;  let $ObjName$:$ClassName$;&#10;&#10;  beforeEach(() =&gt; {&#10;    $ObjName$ = new $ClassName$();&#10;  });&#10;&#10;  describe('', () =&gt; {&#10;    it('', () =&gt; {&#10;      // given&#10;&#10;      // when&#10;&#10;      // then&#10;    });&#10;  });&#10;});&#10;" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
+  </component>
+  <component name="RunManager" selected="JUnit.ExpressionParserTest">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpressionParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringExpressionLanguage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luxoft.springel.example09.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.luxoft.springel.example09" />
+      <option name="MAIN_CLASS_NAME" value="com.luxoft.springel.example09.ExpressionParserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OperatorsAnnotationBasedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringExpressionLanguage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luxoft.springel.example06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.luxoft.springel.example06" />
+      <option name="MAIN_CLASS_NAME" value="com.luxoft.springel.example06.OperatorsAnnotationBasedTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OperatorsXmlBasedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringExpressionLanguage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luxoft.springel.example05.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.luxoft.springel.example05" />
+      <option name="MAIN_CLASS_NAME" value="com.luxoft.springel.example05.OperatorsXmlBasedTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegExAnnotationBasedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringExpressionLanguage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luxoft.springel.example08.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.luxoft.springel.example08" />
+      <option name="MAIN_CLASS_NAME" value="com.luxoft.springel.example08.RegExAnnotationBasedTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegExXmlBasedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringExpressionLanguage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luxoft.springel.example07.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.luxoft.springel.example07" />
+      <option name="MAIN_CLASS_NAME" value="com.luxoft.springel.example07.RegExXmlBasedTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.OperatorsXmlBasedTest" />
+      <item itemvalue="JUnit.OperatorsAnnotationBasedTest" />
+      <item itemvalue="JUnit.RegExXmlBasedTest" />
+      <item itemvalue="JUnit.RegExAnnotationBasedTest" />
+      <item itemvalue="JUnit.ExpressionParserTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ExpressionParserTest" />
+        <item itemvalue="JUnit.RegExAnnotationBasedTest" />
+        <item itemvalue="JUnit.RegExXmlBasedTest" />
+        <item itemvalue="JUnit.OperatorsAnnotationBasedTest" />
+        <item itemvalue="JUnit.OperatorsXmlBasedTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="33bc5ba6-071a-4242-b792-a01c6944f2fc" name="Default" comment="" />
+      <created>1473024993361</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1473024993361</updated>
+      <workItem from="1473024999241" duration="6934000" />
+      <workItem from="1487161427161" duration="2581000" />
+      <workItem from="1505804767182" duration="2930000" />
+      <workItem from="1521623962957" duration="552000" />
+      <workItem from="1537338584752" duration="81000" />
+      <workItem from="1537338711933" duration="339000" />
+      <workItem from="1571734129055" duration="466000" />
+      <workItem from="1586759194298" duration="144000" />
+      <workItem from="1590652283103" duration="977000" />
+      <workItem from="1590657528559" duration="804000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ExpressionParserTest - 2018.12.14 at 02h 05m 17s.xml">
+      <configuration name="ExpressionParserTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OperatorsAnnotationBasedTest - 2018.12.14 at 02h 05m 05s.xml">
+      <configuration name="OperatorsAnnotationBasedTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OperatorsXmlBasedTest - 2018.12.14 at 02h 05m 00s.xml">
+      <configuration name="OperatorsXmlBasedTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RegExAnnotationBasedTest - 2017.09.19 at 10h 29m 17s.xml">
+      <configuration name="RegExAnnotationBasedTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RegExAnnotationBasedTest - 2018.12.14 at 02h 05m 13s.xml">
+      <configuration name="RegExAnnotationBasedTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RegExXmlBasedTest - 2018.12.14 at 02h 05m 08s.xml">
+      <configuration name="RegExXmlBasedTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringELAnnotationBasedMethodInvocationTest - 2018.12.14 at 02h 04m 57s.xml">
+      <configuration name="SpringELAnnotationBasedMethodInvocationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringELAnnotationBasedTest - 2018.12.14 at 02h 04m 49s.xml">
+      <configuration name="SpringELAnnotationBasedTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringELXmlBasedMethodInvocationTest - 2018.12.14 at 02h 04m 53s.xml">
+      <configuration name="SpringELXmlBasedMethodInvocationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringELXmlBasedTest - 2018.12.14 at 02h 04m 40s.xml">
+      <configuration name="SpringELXmlBasedTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="192" key="#Project_Structure" timestamp="1590652303490">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="192" key="#Project_Structure/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1590652303490" />
+    <state x="674" y="394" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586759329358">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="674" y="394" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1680.947@0.23.1680.947" timestamp="1586759329358" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1590657213339">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/1680.23.1920.1032/0.23.1680.1027@0.23.1680.1027" timestamp="1590657213339" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1590657213338">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.center/1680.23.1920.1032/0.23.1680.1027@0.23.1680.1027" timestamp="1590657213338" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1590657213337">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.left/1680.23.1920.1032/0.23.1680.1027@0.23.1680.1027" timestamp="1590657213337" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1590657213339">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.right/1680.23.1920.1032/0.23.1680.1027@0.23.1680.1027" timestamp="1590657213339" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+</project>

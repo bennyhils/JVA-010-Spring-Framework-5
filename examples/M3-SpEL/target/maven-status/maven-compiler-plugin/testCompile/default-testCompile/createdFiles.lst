@@ -1,0 +1,9 @@
+com/luxoft/springel/example02/SpringELAnnotationBasedTest.class
+com/luxoft/springel/example03/SpringELXmlBasedMethodInvocationTest.class
+com/luxoft/springel/example08/RegExAnnotationBasedTest.class
+com/luxoft/springel/example05/OperatorsXmlBasedTest.class
+com/luxoft/springel/example06/OperatorsAnnotationBasedTest.class
+com/luxoft/springel/example09/ExpressionParserTest.class
+com/luxoft/springel/example01/SpringELXmlBasedTest.class
+com/luxoft/springel/example04/SpringELAnnotationBasedMethodInvocationTest.class
+com/luxoft/springel/example07/RegExXmlBasedTest.class

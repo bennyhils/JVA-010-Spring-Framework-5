@@ -1,0 +1,5 @@
+com/luxoft/springaop/lab5/model/UsualPerson.class
+com/luxoft/springaop/lab5/model/CountryImpl.class
+com/luxoft/springaop/lab5/model/Person.class
+com/luxoft/springaop/lab5/model/Country.class
+com/luxoft/springaop/lab5/aspects/LoggingAspect.class

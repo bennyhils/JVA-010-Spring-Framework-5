@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+
+	<bean id="userDirectory" class="com.luxoft.springioc.example14_tests.DatabaseUserDirectory" />
+
+	<bean id="databaseUserDirectory" class="com.luxoft.springioc.example14_tests.LDAPUserDirectory" />
+
+	<!--<bean id="ldapUserDirectory" class="com.luxoft.springioc.example14_tests.LDAPUserDirectory" />-->
+
+	<bean class="com.luxoft.springioc.example14.LDAPUserDirectory" />
+
+	<bean id="loginManager" class="com.luxoft.springioc.example14_tests.LoginManager" autowire="byName" >
+		<!-- autowire override -->
+		<property name="userDirectory" ref="databaseUserDirectory" />
+	</bean>
+
+	<bean id="userDirectorySearch" class="com.luxoft.springioc.example14_tests.UserDirectorySearch" autowire="constructor" />
+
+	<bean id="userInfo" class="com.luxoft.springioc.example14_tests.UserInfo" autowire="byType" />
+
+</beans>

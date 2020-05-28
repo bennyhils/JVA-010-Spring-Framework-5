@@ -1,0 +1,4 @@
+com/luxoft/springdb/lab2/dao/CountryDao.class
+com/luxoft/springdb/lab2/dao/jpa/AbstractJpaDao.class
+com/luxoft/springdb/lab2/dao/jpa/CountryJpaDaoImpl.class
+com/luxoft/springdb/lab2/model/Country.class

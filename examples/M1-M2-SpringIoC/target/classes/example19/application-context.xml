@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.2.xsd" >
+
+	<bean name="classic" class="com.luxoft.springioc.example19.ExampleBean">
+		<property name="email" value="foo@bar.com"  />
+	</bean>
+
+	<bean name="p-namespace" class="com.luxoft.springioc.example19.ExampleBean" 
+			p:email="foo@bar.com" />
+			
+    <bean name="john-classic" class="com.luxoft.springioc.example19.Person">
+		<property name="name" value="John Doe" />
+		<property name="spouse" ref="jane" />
+	</bean>
+
+	<bean name="john-modern" class="com.luxoft.springioc.example19.Person" 
+		p:name="John Doe"
+		p:spouse-ref="jane" />
+
+	<bean name="jane" class="com.luxoft.springioc.example19.Person">
+		<property name="name" value="Jane Doe" />
+	</bean>
+    
+			
+</beans>

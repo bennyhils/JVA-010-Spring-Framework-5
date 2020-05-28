@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="fileMovieFinder" class="com.luxoft.springioc.movies.FileMovieFinder">
+        <property name="fileName" value="movies.txt" />
+    </bean>
+
+    <bean id="movieLister" class="com.luxoft.springioc.movies.MovieLister">
+        <property name="finder" ref="fileMovieFinder" />
+    </bean>
+
+</beans>
